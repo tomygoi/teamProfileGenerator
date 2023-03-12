@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.page-header {
+    background-color:#c75858
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: rgb(74, 77, 79);
+}
+
+.card-header {
+    background-color: #0849fc;
+    color: white;
+}
+
+.card-body {
+    color: black;
+}
