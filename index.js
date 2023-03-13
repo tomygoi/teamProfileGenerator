@@ -82,7 +82,7 @@ const addEngineer = () => {
         },
     ])
     .then(data => {
-        const teamMember = new Engineer(data);
+        const teamMember = new Engineer(data.name, data.id, data.email, data.github);
         employees.push(teamMember);
         addMember();
     })
@@ -112,7 +112,7 @@ const addIntern = () => {
         }
     ])
     .then(data => {
-        const teamMember = new Intern(data);
+        const teamMember = new Intern(data.name, data.id, data.email, data.school);
         employees.push(teamMember);
         addMember();
     })
@@ -124,7 +124,7 @@ function init() {
 
 init()
 .then(data => {
-    const teamMember = new Manager(data);
+    const teamMember = new Manager(data.name, data.id, data.email, data.officeNum);
     employees.push(teamMember);
     addMember();
 });
