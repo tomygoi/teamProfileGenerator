@@ -7,9 +7,9 @@ const managerCard = (manager) => {
         </div>
         <div class = "card-body">
             <ul class = "card-list">
-                <li class = "card-list-content">ID: ${manager.getID()}</li>
+                <li class = "card-list-content">ID: ${manager.getId()}</li>
                 <li class = "card-list-content">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
-                <li class = "card-list-content">Office Number: ${manager.officeNum()}</li>
+                <li class = "card-list-content">Office Number: ${manager.getOfficeNum()}</li>
             </ul>
         </div>
     </div>
@@ -25,7 +25,7 @@ const engineerCard = (engineer) => {
         </div>
         <div class = "card-body">
             <ul class = "card-list">
-                <li class = "card-list-content">ID: ${engineer.getID()}</li>
+                <li class = "card-list-content">ID: ${engineer.getId()}</li>
                 <li class = "card-list-content">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
                 <li class = "card-list-content">GitHub: ${engineer.getGithub()}</li>
             </ul>
@@ -43,7 +43,7 @@ const internCard = (intern) => {
         </div>
         <div class = "card-body">
             <ul class = "card-list">
-                <li class = "card-list-content">ID: ${intern.getID()}</li>
+                <li class = "card-list-content">ID: ${intern.getId()}</li>
                 <li class = "card-list-content">Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></li>
                 <li class = "card-list-content">School: ${intern.getSchool()}</li>
             </ul>
